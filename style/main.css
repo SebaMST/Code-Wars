@@ -47,11 +47,12 @@ body {
 
 .main-header__brand:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .main-header__brand,
 .main-header__brand:hover {
-    transition: opacity 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .main-nav {
