@@ -1,15 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    transition: all 0.05s ease-in-out;
+}
+
 body {
+    margin: 0;
+    padding-top: 15rem;
     background-image: url('../asset/bg-main.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    /*font-family: 'Press Start 2P', cursive;*/
+    color: rgb(209, 216, 218);
 }
 
-* {
-    box-sizing: border-box;
+body::-webkit-scrollbar {
+    display: none;   /* Hide scrollbar for IE, Edge and Firefox */
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 16px;
+    background: linear-gradient(180deg, rgb(2 90 118 / 72%) 0%, rgb(0 0 0 / 0%) 100%);
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+    background: radial-gradient(circle, rgb(77 139 147) 0%, rgba(255,255,255,0) 60%);
+    opacity: 0.9;
+}
+
+.main-header > div:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.main-header > div img {
+    width: 80px;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 90px);
+    text-align: right;
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+    text-shadow: 0px 0px 0px white;
+}
+
+.main-nav__item:hover {
+    text-shadow: 0px 0px 20px white;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color:rgb(241 241 241);
+}
+
+.main-nav__item--cta {
+    padding: 10px 25px;
+    background: radial-gradient(#ff009e, #151019);
+    border-radius: 10% 90% 10% 90% / 91% 9% 91% 9%;
+    text-shadow: 0px 0px 4px #000000;
+}
+
+.main-nav__item--cta:hover {
+    background: radial-gradient(#ff0000, #ff000073)
+}
+
+.main-nav__item--cta a {
+    color: white;
+}
+
+main {
 }
