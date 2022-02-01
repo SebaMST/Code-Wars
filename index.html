@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Orbitron:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="shortcut icon" href="favicon-2.png" type="image/x-icon">
-    <title>CODE WARS - The Republic of Computer Science</title>
+    <title>CODE WARS - Republic of Computer Science</title>
 </head>
+
 <body>
     <header class="main-header">
-        <a href="#" class="main-header__brand">
-            <img src="asset/logo-main-sm-2.png" alt="">
+        <a href="#" title="Home" class="main-header__brand">
+            <img src="asset/logo-main-sm.png" alt="">
         </a>
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="packages/index.html">Get started</a>
+                    <a href="#getstarted">Get started</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="customers/index.html">Learn</a>
@@ -34,98 +38,157 @@
         </nav>
     </header>
     <main>
-        <h1>CSS3</h1>
+        <div class="main-landing">
+            <h1>
+                GOOD software is like wine...
+            </h1>
+            <a href="#getstarted" title="Pour some wine" class="main-landing__wine">
+                <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
+                    <g id="svgg">
+                        <path id="path0"
+                            d="M193.680 39.680 C 192.190 41.170,193.647 45.558,200.028 58.800 C 212.855 85.421,216.791 106.379,216.286 145.370 C 216.080 161.292,215.699 166.305,213.821 177.800 C 209.646 203.356,210.570 215.910,217.854 232.600 C 223.010 244.412,232.236 255.190,241.349 260.047 C 242.654 260.742,244.369 261.885,245.161 262.586 C 246.630 263.886,249.277 265.091,253.197 266.243 C 260.235 268.311,264.352 271.714,268.751 279.100 C 272.637 285.623,272.934 285.574,274.162 278.200 C 275.583 269.666,277.718 266.089,284.767 260.436 C 289.846 256.364,293.200 253.213,293.200 252.516 C 293.200 252.177,294.568 250.077,296.241 247.850 C 302.157 239.972,306.488 228.985,307.376 219.600 C 307.951 213.534,305.128 210.981,299.578 212.547 C 284.752 216.731,272.680 210.863,258.956 192.800 C 251.528 183.023,249.797 178.157,243.421 149.109 C 242.003 142.649,240.377 135.392,239.808 132.982 C 239.239 130.572,238.497 127.430,238.160 126.000 C 234.477 110.395,230.894 97.391,227.414 87.000 C 221.860 70.414,218.793 63.370,213.681 55.460 C 207.016 45.149,196.504 36.856,193.680 39.680 M282.084 345.384 C 281.275 346.413,281.137 346.736,279.435 351.600 C 275.987 361.451,271.214 365.368,252.000 374.111 C 246.472 376.626,245.260 379.306,248.795 381.198 C 250.756 382.247,260.163 382.057,268.720 380.796 C 305.596 375.360,325.987 370.239,329.089 365.634 C 330.997 362.801,328.128 361.437,318.894 360.789 C 301.567 359.572,294.773 356.799,288.247 348.278 C 285.225 344.333,283.535 343.539,282.084 345.384 "
+                            stroke="none" fill="#edaedd" fill-rule="evenodd"></path>
+                        <path id="path1"
+                            d="M165.200 16.561 C 158.888 18.468,154.952 20.593,154.567 22.300 C 153.281 28.011,155.948 26.688,121.400 38.748 C 108.860 43.126,94.820 48.104,90.200 49.812 C 81.906 52.877,79.002 53.841,69.200 56.781 C 54.790 61.104,49.593 60.685,27.929 53.453 C 14.961 49.125,11.569 48.441,2.900 48.410 L 0.000 48.400 0.000 111.772 L 0.000 175.144 1.300 174.743 C 2.015 174.523,3.680 174.020,5.000 173.626 C 10.798 171.895,19.641 168.507,25.200 165.886 C 32.755 162.324,46.273 152.575,49.417 148.421 C 50.175 147.419,51.426 145.790,52.199 144.800 C 52.971 143.810,54.981 140.750,56.666 138.000 C 58.351 135.250,60.915 131.223,62.365 129.051 C 63.814 126.879,65.303 124.646,65.672 124.088 C 70.246 117.196,79.986 110.180,90.200 106.422 C 91.520 105.937,93.140 105.288,93.800 104.981 C 95.086 104.383,104.147 101.042,109.400 99.229 C 113.105 97.950,124.642 93.663,146.400 85.479 C 170.376 76.461,171.183 76.235,172.663 78.116 C 175.269 81.430,176.965 81.704,182.971 79.785 C 193.761 76.337,194.936 74.506,191.996 65.719 C 191.569 64.444,191.215 63.108,191.210 62.751 C 191.204 62.394,190.858 61.314,190.439 60.351 C 190.021 59.388,189.554 57.430,189.401 56.000 C 189.249 54.570,188.871 53.001,188.562 52.514 C 188.253 52.027,188.000 51.387,188.000 51.092 C 188.000 50.798,187.463 49.710,186.807 48.675 C 186.151 47.641,185.082 45.221,184.431 43.297 C 183.781 41.374,182.419 37.820,181.405 35.400 C 180.391 32.980,179.195 30.010,178.748 28.800 C 173.931 15.769,172.400 14.385,165.200 16.561 M185.992 33.810 C 183.767 36.490,188.908 51.299,194.807 59.200 C 205.242 73.177,211.194 94.625,212.742 123.826 C 213.614 140.288,212.625 164.739,210.598 176.800 C 209.981 180.475,209.121 186.468,208.390 192.200 C 206.576 206.413,208.207 217.560,214.783 235.882 C 217.223 242.683,217.651 245.239,216.291 244.894 C 212.240 243.867,204.331 232.194,200.949 222.249 C 198.182 214.115,198.060 204.132,200.417 178.600 C 201.275 169.303,203.949 146.070,204.617 142.100 C 204.864 140.634,204.128 140.263,203.826 141.700 C 203.722 142.195,203.092 144.940,202.427 147.800 C 200.835 154.639,199.417 162.111,198.414 168.938 C 197.967 171.983,197.526 174.596,197.435 174.744 C 197.046 175.373,195.925 188.346,195.626 195.685 C 194.581 221.263,198.633 235.263,210.437 246.862 C 219.127 255.401,229.715 261.110,252.555 269.574 C 258.958 271.946,261.280 273.608,263.823 277.637 C 267.090 282.812,272.015 302.806,277.264 332.200 C 277.954 336.067,277.820 344.560,277.018 347.800 C 274.511 357.922,269.990 362.266,254.924 369.032 C 243.529 374.149,240.000 376.745,240.000 380.013 C 240.000 387.545,255.954 387.409,296.200 379.531 C 323.311 374.224,336.400 369.086,336.400 363.751 C 336.400 359.654,333.154 358.479,318.856 357.401 C 292.205 355.390,287.225 349.658,282.017 315.000 C 275.750 273.294,275.966 271.703,289.391 260.867 C 320.850 235.473,328.393 213.600,316.654 181.800 C 313.836 174.166,304.314 153.949,302.618 152.000 C 302.331 151.670,301.783 150.770,301.400 150.000 C 300.400 147.991,293.992 137.187,293.097 136.000 C 292.682 135.450,291.455 133.605,290.371 131.900 C 287.573 127.501,287.306 128.003,289.888 132.808 C 295.307 142.894,303.652 159.263,305.077 162.600 C 305.546 163.700,307.040 167.030,308.397 170.000 C 312.235 178.403,314.092 183.289,316.379 191.000 C 318.886 199.454,317.958 215.200,314.952 215.200 C 313.905 215.200,311.111 212.221,310.177 210.110 C 308.852 207.114,308.098 207.072,298.200 209.441 C 284.553 212.708,273.304 206.942,261.359 190.556 C 254.633 181.328,252.560 175.430,246.611 148.600 C 229.835 72.932,219.664 48.895,199.169 36.470 C 194.484 33.630,187.338 32.187,185.992 33.810 M199.913 40.979 C 208.093 46.394,214.970 55.575,220.602 68.600 C 226.453 82.133,232.378 101.501,238.160 126.000 C 238.497 127.430,239.239 130.572,239.808 132.982 C 240.377 135.392,242.003 142.649,243.421 149.109 C 249.797 178.157,251.528 183.023,258.956 192.800 C 272.680 210.863,284.752 216.731,299.578 212.547 C 305.128 210.981,307.951 213.534,307.376 219.600 C 306.488 228.985,302.157 239.972,296.241 247.850 C 294.568 250.077,293.200 252.177,293.200 252.516 C 293.200 253.213,289.846 256.364,284.767 260.436 C 277.718 266.089,275.583 269.666,274.162 278.200 C 272.934 285.574,272.637 285.623,268.751 279.100 C 264.352 271.714,260.235 268.311,253.197 266.243 C 249.277 265.091,246.630 263.886,245.161 262.586 C 244.369 261.885,242.654 260.742,241.349 260.047 C 232.236 255.190,223.010 244.412,217.854 232.600 C 210.570 215.910,209.646 203.356,213.821 177.800 C 215.699 166.305,216.080 161.292,216.286 145.370 C 216.791 106.379,212.855 85.421,200.028 58.800 C 194.680 47.701,193.208 43.902,193.202 41.180 C 193.196 38.537,196.093 38.450,199.913 40.979 M284.972 344.860 C 285.527 345.113,287.000 346.651,288.247 348.278 C 294.773 356.799,301.567 359.572,318.894 360.789 C 328.128 361.437,330.997 362.801,329.089 365.634 C 325.987 370.239,305.596 375.360,268.720 380.796 C 260.163 382.057,250.756 382.247,248.795 381.198 C 245.260 379.306,246.472 376.626,252.000 374.111 C 271.214 365.368,275.987 361.451,279.435 351.600 C 281.137 346.736,281.275 346.413,282.084 345.384 C 282.948 344.286,283.495 344.187,284.972 344.860 "
+                            stroke="none" fill="#d05bae" fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <article id="getstarted">
+            <h2>
+                introduction();
+            </h2>
+            <h1>CSS3</h1>
 
-        <h2>Resources</h2>
-        <ul>
-            <li>
-                CSS3 Cheatsheet by Hostinger: 
-                <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>  
-            </li>
-            <li>
-                CSS3 Selector Reference (w3schools): 
-                <a href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a></li>
-            <li>CSS3 Pseudo-classes Reference (MDN): 
-                <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a></li>
-            <li>CSS3 Pseudo-elements Reference (MDN): <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
-            <li>CSS3 Interactive Cheatsheet + Component style generators: <a href="https://htmlcheatsheet.com/css/"></a></li>
-        </ul>
-        <h1>CSS3</h1>
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    CSS3 Cheatsheet by Hostinger:
+                    <a
+                        href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>
+                </li>
+                <li>
+                    CSS3 Selector Reference (w3schools):
+                    <a
+                        href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a>
+                </li>
+                <li>CSS3 Pseudo-classes Reference (MDN):
+                    <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a>
+                </li>
+                <li>CSS3 Pseudo-elements Reference (MDN): <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
+                <li>CSS3 Interactive Cheatsheet + Component style generators: <a
+                        href="https://htmlcheatsheet.com/css/"></a></li>
+            </ul>
+            <h1>CSS3</h1>
 
-        <h2>Resources</h2>
-        <ul>
-            <li>
-                CSS3 Cheatsheet by Hostinger: 
-                <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>  
-            </li>
-            <li>
-                CSS3 Selector Reference (w3schools): 
-                <a href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a></li>
-            <li>CSS3 Pseudo-classes Reference (MDN): 
-                <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a></li>
-            <li>CSS3 Pseudo-elements Reference (MDN): <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
-            <li>CSS3 Interactive Cheatsheet + Component style generators: <a href="https://htmlcheatsheet.com/css/"></a></li>
-        </ul>
-        <h1>CSS3</h1>
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    CSS3 Cheatsheet by Hostinger:
+                    <a
+                        href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>
+                </li>
+                <li>
+                    CSS3 Selector Reference (w3schools):
+                    <a
+                        href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a>
+                </li>
+                <li>CSS3 Pseudo-classes Reference (MDN):
+                    <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a>
+                </li>
+                <li>CSS3 Pseudo-elements Reference (MDN): <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
+                <li>CSS3 Interactive Cheatsheet + Component style generators: <a
+                        href="https://htmlcheatsheet.com/css/"></a></li>
+            </ul>
+            <h1>CSS3</h1>
 
-        <h2>Resources</h2>
-        <ul>
-            <li>
-                CSS3 Cheatsheet by Hostinger: 
-                <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>  
-            </li>
-            <li>
-                CSS3 Selector Reference (w3schools): 
-                <a href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a></li>
-            <li>CSS3 Pseudo-classes Reference (MDN): 
-                <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a></li>
-            <li>CSS3 Pseudo-elements Reference (MDN): <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
-            <li>CSS3 Interactive Cheatsheet + Component style generators: <a href="https://htmlcheatsheet.com/css/"></a></li>
-        </ul>
-        <h1>CSS3</h1>
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    CSS3 Cheatsheet by Hostinger:
+                    <a
+                        href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>
+                </li>
+                <li>
+                    CSS3 Selector Reference (w3schools):
+                    <a
+                        href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a>
+                </li>
+                <li>CSS3 Pseudo-classes Reference (MDN):
+                    <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a>
+                </li>
+                <li>CSS3 Pseudo-elements Reference (MDN): <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
+                <li>CSS3 Interactive Cheatsheet + Component style generators: <a
+                        href="https://htmlcheatsheet.com/css/"></a></li>
+            </ul>
+            <h1>CSS3</h1>
 
-        <h2>Resources</h2>
-        <ul>
-            <li>
-                CSS3 Cheatsheet by Hostinger: 
-                <a href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>  
-            </li>
-            <li>
-                CSS3 Selector Reference (w3schools): 
-                <a href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a></li>
-            <li>CSS3 Pseudo-classes Reference (MDN): 
-                <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a></li>
-            <li>CSS3 Pseudo-elements Reference (MDN): <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
-            <li>CSS3 Interactive Cheatsheet + Component style generators: <a href="https://htmlcheatsheet.com/css/"></a></li>
-        </ul>
-        <h2>Important topics</h2>
-    Specificity: 
-          https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
-    Cascade and Inheritance: 
-          https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
-    Why avoid !important is IMPORTANT:
-          https://uxengineer.com/css-specificity-avoid-important-css/
-    The Box Model (content, padding, border, margin, background, width, height etc.): 
-          https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
-    Block vs. Inline: 
-          https://drive.google.com/file/d/1au0biRruQRIBNtxmm4QvuABQ1X0Xstom/view?usp=sharing
-    Margin collapsing: 
-          https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
-    Centering:
-          https://css-tricks.com/centering-css-complete-guide/
-          https://www.w3schools.com/css/css_align.asp
-    Float (All about floats, Is CSS float deprecated?) and clear:
-          https://css-tricks.com/tag/float/
-          https://developer.mozilla.org/en-US/docs/Web/CSS/clear
-    Positioning:
-          https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning
-    Stacking Context & z-index:
-          https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index
-    Overflow:
-          https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
-    BEM CSS Conventions for reusability, modularity, scalability:
-          http://getbem.com/
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    CSS3 Cheatsheet by Hostinger:
+                    <a
+                        href="https://www3.cs.stonybrook.edu/~pramod.ganapathi/doc/CSE102/CSE102-CheatSheetCSSLong.pdf">here</a>
+                </li>
+                <li>
+                    CSS3 Selector Reference (w3schools):
+                    <a
+                        href="https://drive.google.com/file/d/1vKqkIDzrqDEoAH3rw6fHAQvYddm1fBRi/view?usp=sharing">here</a>
+                </li>
+                <li>CSS3 Pseudo-classes Reference (MDN):
+                    <a href="https://drive.google.com/file/d/1yofBnlR1XrP1C4GjZYdSkBDRqdf7zYj6/view?usp=sharing"></a>
+                </li>
+                <li>CSS3 Pseudo-elements Reference (MDN): <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"></a></li>
+                <li>CSS3 Interactive Cheatsheet + Component style generators: <a
+                        href="https://htmlcheatsheet.com/css/"></a></li>
+            </ul>
+            <h2>Important topics</h2>
+            Specificity:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+            Cascade and Inheritance:
+            https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+            Why avoid !important is IMPORTANT:
+            https://uxengineer.com/css-specificity-avoid-important-css/
+            The Box Model (content, padding, border, margin, background, width, height etc.):
+            https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+            Block vs. Inline:
+            https://drive.google.com/file/d/1au0biRruQRIBNtxmm4QvuABQ1X0Xstom/view?usp=sharing
+            Margin collapsing:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+            Centering:
+            https://css-tricks.com/centering-css-complete-guide/
+            https://www.w3schools.com/css/css_align.asp
+            Float (All about floats, Is CSS float deprecated?) and clear:
+            https://css-tricks.com/tag/float/
+            https://developer.mozilla.org/en-US/docs/Web/CSS/clear
+            Positioning:
+            https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning
+            Stacking Context & z-index:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index
+            Overflow:
+            https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+            BEM CSS Conventions for reusability, modularity, scalability:
+            http://getbem.com/
+        </article>
     </main>
-
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__items">
+                <li class="main-footer__item">
+                    <a href="#">Support</a>
+                </li>
+                <li class="main-footer__item">
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
