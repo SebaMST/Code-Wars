@@ -19,7 +19,7 @@ body {
     padding-top: 5rem;
     background-image: url('../asset/bg-main-xl.png');
     background-size: 55%;
-    background-position: top 13% right 10%;
+    background-position: top 10% right 10%;
     background-repeat: no-repeat;
     background-color: #0f0b12;
     font-family: 'Orbitron', sans-serif;
@@ -81,6 +81,7 @@ body {
 }
 
 .main-footer__items {
+    padding: 0;
     font-size: 14px;
     text-align: center;
 }
@@ -133,6 +134,7 @@ h1, h2 {
     font-weight: initial;
     font-family: 'Fredericka the Great', cursive;
     color: var(--bg-light);
+    margin-top: 0;
 }
 
 h1 {
@@ -145,9 +147,8 @@ h2 {
 
 article {
     position: relative;
-    margin: 4rem 16rem;
-    padding: 2rem;
-    background: linear-gradient(45deg, var(--bg-dark) 0%, var(--bg-dark-2) 100%);
+    margin: 8rem 16rem;
+    padding: 4rem;
 }
 
 article::before {
@@ -161,4 +162,22 @@ article::before {
 	height: calc(100% + 12px);
 	background: var(--bg-light);
     filter: blur(3px)
+}
+
+article::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background: linear-gradient(45deg, var(--bg-dark) 0%, var(--bg-dark-2) 100%);
+    filter: blur(1px);
+    border-radius: 100% / 1%;
+}
+
+article, article::before {
+    border-radius: 100% / 1%;
 }
