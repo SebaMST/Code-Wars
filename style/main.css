@@ -22,7 +22,7 @@ body {
     background-position: top 10% right 10%;
     background-repeat: no-repeat;
     background-color: #0f0b12;
-    font-family: 'Orbitron', sans-serif;
+    font-family: monospace;
     /* font-family: 'Press Start 2P', cursive; */
     color: rgb(209, 216, 218);
 }
@@ -49,6 +49,11 @@ body {
 .main-footer {
     padding: 60px 0;
     background: linear-gradient(0deg, var(--bg-dark) 0%, transparent 100%);
+}
+
+.main-header,
+.main-footer {
+    font-family: 'Orbitron', sans-serif;
 }
 
 .main-header > * {
@@ -145,10 +150,20 @@ h2 {
     font-size: 4rem;
 }
 
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
 article {
     position: relative;
     margin: 8rem 16rem;
-    padding: 4rem;
+    padding: 6rem 8rem;
 }
 
 article::before {
@@ -180,4 +195,14 @@ article::after {
 
 article, article::before {
     border-radius: 100% / 1%;
+}
+
+article > section {
+    width: 75%;
+    text-align: justify;
+}
+
+.article-video {
+    padding: 2rem;
+    text-align: center;
 }
